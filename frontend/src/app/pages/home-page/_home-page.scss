@@ -1,0 +1,31 @@
+.home-page {
+  display: flex;
+}
+
+.categories-title {
+  text-align: center;
+  width: 100%;
+  font-family: Roboto, sans-serif;
+  font-style: italic;
+  font-size: 3rem;
+  color: #2880ab;
+  margin-top: 0.5rem;
+
+  @media (max-width: 490px) {
+    margin-top: 40px;
+  }
+}
+
+.cards-field {
+  max-width: 1350px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-auto-flow: dense;
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+  place-items: center;
+  padding-top: 2rem;
+  justify-content: space-between;
+}

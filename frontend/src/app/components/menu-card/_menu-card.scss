@@ -1,0 +1,56 @@
+.card {
+  &__wrapper {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    background-image: linear-gradient(315deg, #08b9d2 0%, #55d284 74%);
+    display: grid;
+    border-radius: 20px;
+    box-shadow: 2px 6px 32px 10px rgba(34, 60, 80, 0.30);
+    cursor: pointer;
+    z-index: 2;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+
+    &:hover {
+      box-shadow: 2px 6px 32px 10px rgba(34, 60, 80, 0.37);
+    }
+
+    &:active {
+      transform: scale(0.97);
+    }
+  }
+
+  &__link {
+    width: 300px;
+    color: white;
+    text-decoration: none;
+  }
+
+  &__image {
+    width: 250px;
+    height: 240px;
+    object-fit: cover;
+    justify-self: center;
+    margin: 10px 0 0 0;
+    border-radius: 30px;
+  }
+
+  &__title-wrapper {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 2.2rem;
+    font-family: sans-serif;
+    color: white;
+  }
+}
+
+.card__wrapper:hover .card__title{
+  text-decoration: underline;
+}

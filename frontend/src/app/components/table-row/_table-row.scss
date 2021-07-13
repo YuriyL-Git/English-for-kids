@@ -1,0 +1,36 @@
+.table-row{
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(7, 1fr);
+  border-radius: 5px;
+  &:last-child{
+    border-radius: 5px 0 5px 0;
+  }
+}
+
+.table__row-content{
+  display: grid;
+  place-items: center;
+  border: 1px solid white;
+  width: 100%;
+  height: auto;
+  padding: 3px 0;
+  text-align: center;
+  color: white;
+  font-family: Roboto, sans-serif;
+  font-size: 1.4rem;
+  border-radius: 8px;
+  background: #0094b5;
+  @media (max-width: 1070px) {
+    font-size: 1.1rem;
+  }
+  @media (max-width: 850px) {
+    font-size: 0.8rem;
+  }
+  @media (max-width: 650px) {
+    font-size: 0.5rem;
+  }
+  @media (max-width: 420px) {
+    font-size: 0.35rem;
+  }
+}

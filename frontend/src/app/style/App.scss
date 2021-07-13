@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+
+@font-face {
+  font-family: 'Henny-Penny';
+  src: local('Henny-Penny'), url('../../assets/fonts/HennyPenny-Regular.ttf') format('truetype');
+}
+
+body {
+  background-color: #63a4ff;
+  background-image: linear-gradient(315deg, #9cf5d8 0%, #83eaf1 74%);
+  min-height: 98.4vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+}
+
+.app {
+  position: relative;
+}
+
+.title {
+  margin: 0;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  font-family: Henny-Penny, serif;
+  color: #18c31f;
+  font-size: 4.7rem;
+  user-select: none;
+
+  @media (max-width: 820px) {
+    font-size: 4rem;
+  }
+  @media (max-width: 730px) {
+    font-size: 3rem;
+  }
+  @media (max-width: 610px) {
+    font-size: 2rem;
+  }
+  @media (max-width: 490px) {
+    font-size: 0;
+  }
+}
+
+.menu-hover-box {
+  width: 70px;
+  height: 48px;
+  position: absolute;
+  left: 47px;
+  top: 45px;
+  z-index: 5;
+  @media (max-width: 490px) {
+    left: 37px;
+    top: 28px;
+  }
+  @media (max-width: 380px) {
+    left: 0;
+    top: 14px;
+  }
+}
+
+.title-hosting {
+  text-align: center;
+  font-family: Roboto,sans-serif;
+  color: red;
+  font-size: 1.2rem;
+}
+
+
