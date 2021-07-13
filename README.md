@@ -6,3 +6,5 @@ Deploy could be found by the link:
 Backend is hosted on free hosting and requires some time to start!
 
 After first enter please restart the page after 10-15 seconds to connect backend.
+
+To test backend: Login: Admin, Password: Admin
